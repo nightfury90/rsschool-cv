@@ -80,3 +80,16 @@ const UIController = (function () {
   }
 })();
 ```
+
+##6.Experience
+
+Unfortunately, I have no experience in Web Development.
+
+##7.Education
+
+*2010-2015* – Master of Arts: Psychology, Moscow State University.
+
+Online courses: (htmlacademy, freecodecamp, udemy, codecademy, youtube channels).
+
+##8.English
+Pre-intermediate (can clearly understand any videos and literature,but have some problems with speaking English)
