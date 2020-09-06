@@ -1,16 +1,16 @@
-#1. Dmitriy An
+# 1. Dmitriy An
 
-##2. Contacts
+## 2. Contacts
 
 - Email: ya.snakeeye@yandex.ru
 - Phone: +998 91 135 03 56
 - Telegram: @pancake90
 
-##3. Summary
+## 3. Summary
 
 Results-oriented and highly interested in studying web development tools self-taught young man. Spending a lot of time on internet surfing, it was always interesting for me how do the websites work. I have patience when it comes to studying something new, and I like it. It’s important for me to do what I like and understand well what I’m doing.
 
-## 4.Skills
+## 4. Skills
 
 ### Soft skills
 - Collaboration
@@ -23,7 +23,7 @@ Results-oriented and highly interested in studying web development tools self-ta
 - JS Basics
 - Preprocessors (SASS/SCSS)
 
-## 5.Code examples
+## 5. Code examples
 
 ### JS
 ```JS
@@ -81,15 +81,15 @@ const UIController = (function () {
 })();
 ```
 
-##6.Experience
+## 6. Experience
 
 Unfortunately, I have no experience in Web Development.
 
-##7.Education
+## 7. Education
 
 *2010-2015* – Master of Arts: Psychology, Moscow State University.
 
 Online courses: (htmlacademy, freecodecamp, udemy, codecademy, youtube channels).
 
-##8.English
+## 8. English
 Pre-intermediate (can clearly understand any videos and literature,but have some problems with speaking English)
