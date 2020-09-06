@@ -33,7 +33,6 @@ const UIController = (function () {
     constructor(size) {
       this.size = size;
     }
-
   }
 
   //  more scalable code for using id selectors
@@ -74,9 +73,6 @@ const UIController = (function () {
         item.remove();
       });
     },
-    // getSize: function () {
-    //   return this.size;
-    // }
   }
 })();
 ```
