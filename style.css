@@ -100,3 +100,9 @@ td {
 thead {
   background-color: #5b5bd0;
 }
+
+pre {
+  margin-bottom: 10px;
+
+  background-color: #bdbbc6;
+}

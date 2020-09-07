@@ -71,6 +71,65 @@
         </table>
       </section>
 
+      <section class="code">
+        <h2>Code examples</h2>
+
+
+        <pre>
+            <code>
+                // UI controller
+                const UIController = (function () {
+                  class Field {
+                    constructor(size) {
+                      this.size = size;
+                    }
+                  }
+
+                  //  more scalable code for using id selectors
+                  const UISelectors = {
+                    resizeBtn: '.btn-resize',
+                    clearBtn: '.btn-clear',
+                    blackBtn: '.btn-black',
+                    coloredBtn: '.btn-colored',
+                    sprayBtn: '.btn-spray',
+                    container: '.container',
+                    items: '.item',
+                  }
+
+                  return {
+                    buildField: function (size) {
+                      const field = new Field(size);
+
+                      const container = document.querySelector(UISelectors.container);
+
+                      container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+                      container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+
+                      for (let i = 1; i <= size ** 2; i++) {
+                        const item = document.createElement('div');
+
+                        item.classList = 'item';
+                        container.appendChild(item);
+                        item.style.backgroundColor = 'white';
+                      }
+                      return field;
+                    },
+                    getSelectors: function () {
+                      return UISelectors;
+                    },
+                    removeItems: function () {
+                      const items = document.querySelectorAll(UISelectors.items);
+                      items.forEach(function (item) {
+                        item.remove();
+                      });
+                    },
+                  }
+                })();
+            </code>
+        </pre>
+
+      </section>
+
     </main>
   </div>
 </body>
