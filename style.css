@@ -1,0 +1,61 @@
+html,
+body {
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a,
+h1,
+h2,
+p,
+section,
+ul,
+li,
+img,
+pre,
+code {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  background-color: #a585a7;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+header {
+  margin-bottom: 15px;
+
+  text-align: center;
+  font-size: 24px;
+}
+
+header,
+footer {
+  background-color: #258bcf;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 0 20px 20px 20px;
+
+}
