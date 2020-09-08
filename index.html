@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML, CSS & Git Basics</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Dmitriy An</h1>
+    </header>
+
+    <main>
+      <section class="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts-and-image">
+          <ul>
+            <li>Email: <a href="mailto:ya.snakeeye@yandex.ru">ya.snakeeye@yandex.ru</a></li>
+            <li>Phone: +998 91 135 03 56</li>
+            <li>Telegram: <a href="https://t.me/pancake90">@pancake90</a></li>
+          </ul>
+          <img src="img/for avatar.jpg" alt="tiger" width="150" height="150">
+        </div>
+      </section>
+
+      <section class="summary">
+        <h2>Summary</h2>
+        <p>
+          Results-oriented and highly interested in studying web development tools self-taught young man.
+          Spending a lot of time on internet surfing, it was always interesting for me how do the websites
+          work.
+          I have patience when it comes to studying something new, and I like it. It’s important for me to do
+          what
+          I like and understand well what I’m doing.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Soft skills</th>
+              <th>Hard skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Collaboration (Advanced)</td>
+              <td>HTML & CSS (Intermediate)</td>
+            </tr>
+            <tr>
+              <td>Communication skills (Advanced)</td>
+              <td>Bootstrap</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>JS (Basic)</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Preprocessors(SASS/SCSS)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="code">
+        <h2>Code examples</h2>
+
+
+        <pre>
+            <code>
+                // UI controller
+                const UIController = (function () {
+                  class Field {
+                    constructor(size) {
+                      this.size = size;
+                    }
+                  }
+
+                  //  more scalable code for using id selectors
+                  const UISelectors = {
+                    resizeBtn: '.btn-resize',
+                    clearBtn: '.btn-clear',
+                    blackBtn: '.btn-black',
+                    coloredBtn: '.btn-colored',
+                    sprayBtn: '.btn-spray',
+                    container: '.container',
+                    items: '.item',
+                  }
+
+                  return {
+                    buildField: function (size) {
+                      const field = new Field(size);
+
+                      const container = document.querySelector(UISelectors.container);
+
+                      container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+                      container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+
+                      for (let i = 1; i <= size ** 2; i++) {
+                        const item = document.createElement('div');
+
+                        item.classList = 'item';
+                        container.appendChild(item);
+                        item.style.backgroundColor = 'white';
+                      }
+                      return field;
+                    },
+                    getSelectors: function () {
+                      return UISelectors;
+                    },
+                    removeItems: function () {
+                      const items = document.querySelectorAll(UISelectors.items);
+                      items.forEach(function (item) {
+                        item.remove();
+                      });
+                    },
+                  }
+                })();
+            </code>
+        </pre>
+
+      </section>
+
+      <section class="Experience">
+        <h2>Experience</h2>
+        <p>Unfortunately, I have no experience in Web Development.</p>
+      </section>
+
+      <section class="Education">
+        <h2>Education</h2>
+        <p><em>2010-2015</em> – Master of Arts: Psychology, Moscow State University.</p>
+        <p>Online courses: htmlacademy, freecodecamp, udemy, codecademy, youtube channels.</p>
+      </section>
+
+      <section class="English">
+        <h2>English</h2>
+        <p>
+          Pre-intermediate (can clearly understand any videos and literature,
+          but have some problems with speaking English)
+        </p>
+      </section>
+
+      <footer>
+        <p>Tashkent, 2020</p>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
